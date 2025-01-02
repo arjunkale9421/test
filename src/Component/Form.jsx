@@ -16,9 +16,18 @@ function Form() {
       <p>Registration Form</p>
       <div>
         <form  className='colorchangee'>
+         <label>
+          email:
+          <input type="text" class="email" onChange={(e)=>SetEmail(e.target.value)} /></label>
+          <label>
+            password:
+        
+          <input type="text" class="password " onChange={(e)=>SetPassword(e.target.value)} /> </label>
 
-          <input type="text" class="email" onChange={(e)=>SetEmail(e.target.value)} />
-          <input type="text" class="password " onChange={(e)=>SetPassword(e.target.value)} />
+          <label>
+            age:
+            <input type='text'></input>
+          </label>
           <button onClick={submit}>submit</button>
           
            
